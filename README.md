@@ -24,11 +24,11 @@ customize things slowly, and try not to bork my system too much (lol).
 ## 📦 Structure
 
 Ugyen-Hyprdots/
-├─ .config/ # Hyprland configs
-├─ .local/ # Rofi Theme
-├─ .p10k.zsh/ # zsh theme
-├─ .zshrc/ # 
-└─ README.md # This file
+├── .config/       # Hyprland and core application configurations
+├── .local/        # Rofi Theme and local scripts
+├── .p10k.zsh/     # Powerlevel10k Zsh theme configuration
+├── .zshrc         # Primary Zsh shell configuration file
+└── README.md      # This file
 
 ---
 
@@ -48,15 +48,15 @@ every improvement = +1 XP to my ricing skill tree. 🎮✨
 
 | 🌸 Rice 1 | 🍡 Rice 2 |
 |----------|----------|
-| <img src="assest/1.png" width="400"> | <img src="assest/2.png" width="400"> |
+| <img src="assets/1.png" width="400"> | <img src="assets/2.png" width="400"> |
 
 | 🎀 Rice 3 | 💕 Rice 4 |
 |----------|----------|
-| <img src="assest/3.png" width="400"> | <img src="assest/4.png" width="400"> |
+| <img src="assets/3.png" width="400"> | <img src="assets/4.png" width="400"> |
 
 ### 🌟 Extra Shot  
 <p align="center">
-  <img src="assest/5.png" width="500">
+  <img src="assets/5.png" width="500">
 </p>
 
 
