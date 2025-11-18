@@ -18,11 +18,13 @@ customize things slowly, and try not to bork my system too much (lol).
 
 ---
 
-## 🧁 Folder Structure  
 
 
-## 📦 Structure
+## 📂 Repository Structure
 
+The following is the layout of the configurations within this repository:
+
+```text
 Ugyen-Hyprdots/
 ├── .config/       # Hyprland and core application configurations
 ├── .local/        # Rofi Theme and local scripts
