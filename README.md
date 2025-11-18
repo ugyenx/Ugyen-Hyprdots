@@ -18,10 +18,20 @@ customize things slowly, and try not to bork my system too much (lol).
 
 ---
 
+## 📂 Repository Structure
 
+The following is the layout of the configurations within this repository:
 
+```text
+Ugyen-Hyprdots/
+├── .config/       # Hyprland and core application configurations
+├── .local/        # Rofi Theme and local scripts
+├── .p10k.zsh/     # Powerlevel10k Zsh theme configuration
+├── .zshrc         # Primary Zsh shell configuration file
+└── README.md      # This file
 
----
+```
+
 
 
 ---
@@ -49,20 +59,6 @@ every improvement = +1 XP to my ricing skill tree. 🎮✨
 <p align="center">
   <img src="assets/5.png" width="500">
 </p>
-
-
-## 📂 Repository Structure
-
-The following is the layout of the configurations within this repository:
-
-
-Ugyen-Hyprdots/
-├── .config/       # Hyprland and core application configurations
-├── .local/        # Rofi Theme and local scripts
-├── .p10k.zsh/     # Powerlevel10k Zsh theme configuration
-├── .zshrc         # Primary Zsh shell configuration file
-└── README.md      # This file
-
 
 ---
 
