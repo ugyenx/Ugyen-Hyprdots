@@ -1,0 +1,100 @@
+* {
+    background-image: none;
+    box-shadow: none;
+}
+
+window {
+    font-family: Fira Code Medium;
+    font-size: 16pt;
+    color: #cdd6f4;
+    background-color: rgba(17, 17, 27, 0.5);
+    min-width: 3000px;
+    /*max-width: 580px;*/
+    min-height: 500px; /* Short height prevents stacking/grid layout */
+    /*max-height: 110px;*/
+
+    /* Fix 3: Center the entire window on the screen (GTK CSS method) */
+    /*margin: ;*/
+
+    border-radius: 20px;
+}
+
+button {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 10%;
+    background-color: rgba(49, 50, 68, 0.7);
+    border-radius: 40px;
+    margin: 10px;
+    min-width: 80px;
+    min-height: 80px;
+    border: 3px solid #45475a;
+}
+
+button:focus {
+    background-size: 15%;
+    background-color: #b4befe;
+    border-color: #b4befe;
+}
+
+button:hover {
+    background-size: 15%;
+    background-color: rgba(69, 71, 90, 0.9);
+    border-color: #b4befe;
+}
+
+/* Individual button hover colors */
+#shutdown:hover {
+    background-color: rgba(243, 139, 168, 0.9);
+    border-color: #f38ba8;
+}
+
+#reboot:hover {
+    background-color: rgba(166, 227, 161, 0.9);
+    border-color: #a6e3a1;
+}
+
+#logout:hover {
+    background-color: rgba(249, 226, 175, 0.9);
+    border-color: #f9e2af;
+}
+
+#suspend:hover {
+    background-color: rgba(137, 180, 250, 0.9);
+    border-color: #89b4fa;
+}
+
+#hibernate:hover {
+    background-color: rgba(203, 166, 247, 0.9);
+    border-color: #cba6f7;
+}
+
+#lock:hover {
+    background-color: rgba(250, 179, 135, 0.9);
+    border-color: #fab387;
+}
+
+/* Icon definitions */
+#shutdown {
+    background-image: image(url("./icons/power.png"));
+}
+
+#logout {
+    background-image: image(url("./icons/logout.png"));
+}
+
+#reboot {
+    background-image: image(url("./icons/restart.png"));
+}
+
+#lock {
+    background-image: image(url("./icons/lock.png"));
+}
+
+#hibernate {
+    background-image: image(url("./icons/hibernate.png"));
+}
+
+#suspend {
+    background-image: image(url("./icons/suspend.png"));
+}

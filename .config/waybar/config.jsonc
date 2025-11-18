@@ -1,0 +1,115 @@
+{
+  "layer": "top",
+  "position": "top",
+  "mod": "dock",
+  "margin-top": 7,
+  "margin-left": 19,
+  "margin-right": 19,
+
+  "exclusive": true,
+  "passthrough": false,
+  "gtk-layer-shell": true,
+  "height": 0,
+  "modules-left": ["hyprland/workspaces"],
+  "modules-center": ["clock", "group/media"],
+  "modules-right": ["tray", "network", "pulseaudio", "battery", "custom/power"],
+
+  "hyprland/window": {
+    "format": "{}",
+  },
+
+  "hyprland/workspaces": {
+    "disable-scroll": true,
+    "all-outputs": true,
+    "on-click": "activate",
+    "format": "{icon}",
+    "persistent_workspaces": {
+      "1": [],
+      "2": [],
+      "3": [],
+      "4": [],
+    },
+  },
+
+  // --- Media Group ---
+  "group/media": {
+    "orientation": "horizontal",
+    "modules": ["custom/media-prev", "mpris", "custom/media-next"],
+  },
+
+  "custom/media-prev": {
+    "format": "",
+    "on-click": "playerctl previous",
+    "tooltip": false,
+  },
+
+  "custom/media-next": {
+    "format": "",
+    "on-click": "playerctl next",
+    "tooltip": false,
+  },
+
+  "mpris": {
+    "format": "{dynamic}",
+    "format-paused": "<i>{dynamic}</i>",
+    "max-length": 40,
+  },
+  // -------------------
+
+  "tray": {
+    "icon-size": 13,
+    "spacing": 10,
+  },
+
+  "clock": {
+    "format": " {:%H:%M}",
+    "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{:%d}</small></tt>",
+  },
+
+  "pulseaudio": {
+    "format": "{icon} {volume}%",
+    "tooltip": false,
+    "format-muted": " Muted",
+    "on-click": "pamixer -t",
+    "on-scroll-up": "pamixer -i 5",
+    "on-scroll-down": "pamixer -d 5",
+    "scroll-step": 5,
+    "format-icons": {
+      "headphone": "",
+      "hands-free": "",
+      "headset": "",
+      "phone": "",
+      "portable": "",
+      "car": "",
+      "default": ["", "", ""],
+    },
+  },
+
+  "network": {
+    "format-wifi": "  {signalStrength}%",
+    "format-ethernet": "{ipaddr}/{cidr} 󰈀",
+    "tooltip-format": "{essid} - {ifname} via {gwaddr}",
+    "format-linked": "{ifname} (No IP)",
+    "format-disconnected": "Disconnected ⚠",
+    "format-alt": "{ifname}:{essid} {ipaddr}/{cidr}",
+  },
+
+  "battery": {
+    "states": {
+      "good": 95,
+      "warning": 30,
+      "critical": 15,
+    },
+    "format": "{icon} {capacity}%",
+    "format-charging": " {capacity}%",
+    "format-plugged": " {capacity}%",
+    "format-alt": "{time} {icon}",
+    "format-icons": ["", "", "", "", ""],
+  },
+
+  "custom/power": {
+    "format": "",
+    "tooltip": false,
+    "on-click": "wlogout -b 2",
+  },
+}
